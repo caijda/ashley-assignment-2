@@ -30,6 +30,9 @@ public class Game {
 					System.out.println("You win!");
 					break;
 				}
+			} else if (guess < 1 || guess > 100) {
+				System.out.println("Your guess is not between 1 and 100, please try again");
+				guess = scanner.nextInt();
 			} else {
 				System.out.println("You lose, the nubmer to guess was " + random);
 				break;
